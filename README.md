@@ -57,3 +57,5 @@ time platanus gap_close -o Poil -t 1 -c Poil_scaffold.fa -IP1 trimmed_seqtk/oil_
 
 Все папки и файлы были скачаны с сервера командами вида
 scp -r -P 32222 -i minor_key lndybovskiy@92.242.58.92:/home/lndybovskiy/HW1/fastqc_after_seqtk .
+
+Для файла Poil_scaffold.fa была также написана программа, считающая число гэпов и неопознанных нуклеотидов. Их оказалось 151 и 6030 соответственно. После сжатия командой, удаляющей гэпы, их оказалось 24 и 1295 соответственно.
