@@ -1,0 +1,5 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	oil_R1_5M	/home/lndybovskiy/HW1/fastqc_after_trimmed_seqtk/oil_R1_5M.fastq.trimmed_fastqc.zip
+FastQC	all_sections	oilMP_S4_L001_R2_001_1.5M	/home/lndybovskiy/HW1/fastqc_after_trimmed_seqtk/oilMP_S4_L001_R2_001_1.5M.fastq.int_trimmed_fastqc.zip
+FastQC	all_sections	oilMP_S4_L001_R1_001_1.5M	/home/lndybovskiy/HW1/fastqc_after_trimmed_seqtk/oilMP_S4_L001_R1_001_1.5M.fastq.int_trimmed_fastqc.zip
+FastQC	all_sections	oil_R2_5M	/home/lndybovskiy/HW1/fastqc_after_trimmed_seqtk/oil_R2_5M.fastq.trimmed_fastqc.zip
