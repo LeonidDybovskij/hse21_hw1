@@ -22,9 +22,10 @@ fastqc oilMP_S4_L001_R1_001_1.5M.fastq
 fastqc oilMP_S4_L001_R2_001_1.5M.fastq
 
 Вывод команд был собран в папке fastqc_after_seqtk
-
 Для четырёх пар файлов в этой папке была использована команда multiqc:
+
 multiqc -o multiqc fastqc_after_seqtk. 
+
 Ниже показана общая статистика, но все файлы есть в папке fastqc.
 
 ![](fastqc/Stat_1_1.png)
