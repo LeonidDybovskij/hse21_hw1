@@ -3,26 +3,29 @@
 Работа с данными секвенирования типов paired-end и mate-pairs проводилась на сервере.
 В случае paired-end использовались файлы oil_R1.fastq и oil_R2.fastq (чтения одних и тех же фрагментов ДНК с двух сторон).
 
-Исходные файлы были обработаны командами
+Выбрали случайно 5 миллионов чтений типа paired-end:
 
 seqtk sample -s1231 oil_R1.fastq 5000000 > oil_R1_5M.fastq
 seqtk sample -s1231 oil_R2.fastq 5000000 > oil_R2_5M.fastq
 
-и 
+и 1.5 миллиона чтений типа mate-pairs:
 
 seqtk sample -s1231 oilMP_S4_L001_R1_001.fastq 1500000 > oilMP_S4_L001_R1_001_1.5M.fastq
 seqtk sample -s1231 oilMP_S4_L001_R2_001.fastq 1500000 > oilMP_S4_L001_R2_001_1.5M.fastq
 
 
-Полученные четыре файла были проанализированы командами
+Оценили качество чтений с помощью fastqc:
+
 fastqc oil_R1_5M.fastq
 fastqc oil_R2_5M.fastq
 fastqc oilMP_S4_L001_R1_001_1.5M.fastq
 fastqc oilMP_S4_L001_R2_001_1.5M.fastq
 
 Вывод команд был собран в папке fastqc_after_seqtk
-Для четырёх пар файлов в этой папке была использована команда multiqc
-multiqc -o multiqc fastqc_after_seqtk. Ниже показана общая статистика, но все файлы есть в папке fastqc.
+
+Для четырёх пар файлов в этой папке была использована команда multiqc:
+multiqc -o multiqc fastqc_after_seqtk. 
+Ниже показана общая статистика, но все файлы есть в папке fastqc.
 
 ![](fastqc/Stat_1_1.png)
 
