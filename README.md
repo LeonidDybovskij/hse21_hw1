@@ -1,6 +1,6 @@
-### Сборка генома бактерии
+### Bacterial genome assembly
 
-[Ссылка на README на русском](README.ru.md)
+[README in russian](README.ru.md)
 
 Работа с данными секвенирования типов paired-end и mate-pairs проводилась на сервере.
 В случае paired-end использовались файлы oil_R1.fastq и oil_R2.fastq (чтения одних и тех же фрагментов ДНК с двух сторон).
