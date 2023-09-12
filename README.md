@@ -25,7 +25,7 @@ fastqc oilMP_S4_L001_R1_001_1.5M.fastq
 fastqc oilMP_S4_L001_R2_001_1.5M.fastq
 
 The command output was collected in the fastqc_after_seqtk folder.  
-The multiqc command was used in this folder for four pairs of files:
+Then, a multiqc command was used in this folder for four pairs of files:
 
 multiqc -o multiqc fastqc_after_seqtk. 
 
