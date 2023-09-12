@@ -2,8 +2,11 @@
 
 [This README in russian](README.ru.md)
 
-This work with sequencing data of the paired-end and mate-pairs types was carried out on a server.  
-In the case of paired-end, the files oil_R1.fastq and oil_R2.fastq were used (these are readings of the same DNA fragments from two sides).
+The goal of this work was to assemble the genome of a bacterium extracted from water containing oil.  
+To do this, files with paired-end and mate-pairs read types were used.  
+In the case of paired-end (these are readings of the same DNA fragments from two sides), the file names were oil_R1.fastq and oil_R2.fastq.  
+
+All work with sequencing data was carried out on a server.  
 
 Firstly, 5 million paired-end reads were randomly selected:
 
@@ -24,10 +27,7 @@ fastqc oil_R2_5M.fastq
 fastqc oilMP_S4_L001_R1_001_1.5M.fastq  
 fastqc oilMP_S4_L001_R2_001_1.5M.fastq
 
-The command output was collected in the fastqc_after_seqtk folder.  
-Then, a multiqc command was used in this folder for four pairs of files:
-
-multiqc -o multiqc fastqc_after_seqtk. 
+This command's output was collected in the fastqc_after_seqtk folder.  
 
 Below are general statistics, but all files are in the fastqc folder.
 
@@ -35,7 +35,11 @@ Below are general statistics, but all files are in the fastqc folder.
 
 ![](fastqc/Stat_1_2.png)
 
-Next, the primary files (but still processed by seqtk) were trimmed with the commands
+Another way to estimate the quality — multiQC — was used too (applied for four pairs of files):
+
+multiqc -o multiqc fastqc_after_seqtk. 
+
+Next, the primary (but still processed by seqtk) files were trimmed with the commands
 
 platanus_trim oil_R1_5M.fastq oil_R2_5M.fastq  
 platanus_internal_trim oilMP_S4_L001_R1_001_1.5M.fastq oilMP_S4_L001_R2_001_1.5M.fastq
