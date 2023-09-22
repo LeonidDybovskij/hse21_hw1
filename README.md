@@ -73,4 +73,4 @@ The resulting file is uploaded to a data folder called scaffolds.fa.
 All folders and files were downloaded from the server using commands like  
 scp -r -P 32222 -i minor_key lndybovskiy@92.242.58.92:/home/lndybovskiy/HW1/fastqc_after_seqtk .
 
-There was also written a program for the Poil_scaffold.fa file to count the number of gaps and unidentified nucleotides. There were 151 and 6030 of them, respectively. After compression by a team that removes gaps, there were 24 and 1295 of them, respectively.
+There was also written a program for the Poil_scaffold.fa file to count the number of gaps and unidentified nucleotides. There were 151 and 6030 of them, respectively. After compression by a team that removes gaps, there were 24 and 1295 of them, respectively. 
