@@ -1,7 +1,5 @@
 ### Bacterial genome assembly
 
-[This README in russian](README.ru.md)
-
 The goal of this work was to assemble the genome of a bacterium extracted from water containing oil.  
 To do this, files with paired-end and mate-pairs read types were used.  
 In the case of paired-end (these are readings of the same DNA fragments from two sides), the file names were oil_R1.fastq and oil_R2.fastq.  
