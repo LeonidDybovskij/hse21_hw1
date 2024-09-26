@@ -40,8 +40,6 @@ Next, the files were trimmed to remove primers with the commands
 *platanus_trim oil_R1_5M.fastq oil_R2_5M.fastq*  
 *platanus_internal_trim oilMP_S4_L001_R1_001_1.5M.fastq oilMP_S4_L001_R2_001_1.5M.fastq*
 
-
-
 For the trimmed files *oil_R1_5M.fastq.trimmed*, *oil_R2_5M.fastq.trimmed*, *oilMP_S4_L001_R1_001_1.5M.fastq.int_trimmed* and *oilMP_S4_L001_R2_001_1.5M.fastq.int_trimmed*, the quality was also estimated with fastqc and multiqc:
 
 ![](fastqc/Stat_2_1.png)
